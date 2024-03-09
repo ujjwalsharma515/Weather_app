@@ -27,8 +27,12 @@ const generatejokes = async (q) => {
         pressure_mb.innerHTML = data.current.pressure_mb;
 		localtime.innerHTML=data.location.localtime;
 		mist.innerHTML = data.current.condition.text;
-		icon.image = data.current.condition.icon;
 
+	//  const htmlData = `
+    //         <div class="box">
+    //     <div class="box1">
+    //         <img src="${data.flags.png}" height = "220vh" width = " 250vw">
+    //     </div>
 		
 	}
 	 catch (error) {
