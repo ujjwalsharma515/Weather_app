@@ -27,7 +27,7 @@ const generatejokes = async (q) => {
         pressure_mb.innerHTML = data.current.pressure_mb;
 		localtime.innerHTML=data.location.localtime;
 		mist.innerHTML = data.current.condition.text;
-		icon.innerHTML =data.current.condition.icon;
+		// icon.innerHTML = data.current.condition.icon;
 
 		
 	}
