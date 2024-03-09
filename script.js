@@ -25,7 +25,7 @@ const generatejokes = async (q) => {
         humidity.innerHTML = data.current.humidity;
         cloud.innerHTML = data.current.cloud;
         pressure_mb.innerHTML = data.current.pressure_mb;
-		localtime.innerHTML=data.localtime;
+		localtime.innerHTML=data.location.localtime;
 
 		
 	}
