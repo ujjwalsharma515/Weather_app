@@ -26,6 +26,8 @@ const generatejokes = async (q) => {
         cloud.innerHTML = data.current.cloud;
         pressure_mb.innerHTML = data.current.pressure_mb;
 		localtime.innerHTML=data.location.localtime;
+		mist.innerHTML = data.current.condition.text;
+		icon.innerHTML =data.current.condition.icon;
 
 		
 	}
