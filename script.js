@@ -26,13 +26,19 @@ const generatejokes = async (q) => {
         cloud.innerHTML = data.current.cloud;
         pressure_mb.innerHTML = data.current.pressure_mb;
 		localtime.innerHTML=data.location.localtime;
-		mist.innerHTML = data.current.condition.text;
+		// mist.innerHTML = data.current.condition.text;
 
-	//  const htmlData = `
-    //         <div class="box">
-    //     <div class="box1">
-    //         <img src="${data.flags.png}" height = "220vh" width = " 250vw">
-    //     </div>
+	 const htmlData = `
+            <div class="box">
+        <div class="box1">
+            <img src="${data.current.condition.icon}" height = "220vh" width = " 250vw">
+        </div>
+	
+		</div>
+
+
+	   `;
+	  
 		
 	}
 	 catch (error) {
