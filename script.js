@@ -19,7 +19,7 @@ const generatejokes = async (q) => {
 		const data = await res.json();
 		
 		temp_c.innerHTML = data.current.temp_c;
-        wind_mph.innerHTML = data.current.wind_mph;
+        wind_kph.innerHTML = data.current.wind_kph;
         wind_degree.innerHTML = data.current.wind_degree;
         wind_dir.innerHTML = data.current.wind_dir
         humidity.innerHTML = data.current.humidity;
