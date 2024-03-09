@@ -17,7 +17,7 @@ const generatejokes = async (q) => {
 			
 		const res = await fetch('http://api.weatherapi.com/v1/current.json?key=6f4b420abaa743b3bab143135230805&q='+q, setHeader)
 		const data = await res.json();
-		console.log(data);
+		
 		temp_c.innerHTML = data.current.temp_c;
         wind_mph.innerHTML = data.current.wind_mph;
         wind_degree.innerHTML = data.current.wind_degree;
