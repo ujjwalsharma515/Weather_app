@@ -27,16 +27,7 @@ const generatejokes = async (q) => {
         pressure_mb.innerHTML = data.current.pressure_mb;
 		localtime.innerHTML=data.location.localtime;
 		mist.innerHTML = data.current.condition.text;
-
-	 const htmlData = `
-            <div class="box">
-        <div class="box1">
-            <img src="${data.current.condition.icon}">
-        </div>
-		</div>
-   
-		`;
-		container.insertAdjacentHTML('afterbegin', htmlData);
+	    icon.innerHTML = data.current.condition.icon;
 	}
 	 catch (error) {
 		console.log(error);
