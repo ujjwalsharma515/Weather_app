@@ -27,7 +27,24 @@ const generatejokes = async (q) => {
         pressure_mb.innerHTML = data.current.pressure_mb;
 		localtime.innerHTML=data.location.localtime;
 		mist.innerHTML = data.current.condition.text;
-	    icon.innerHTML = data.current.condition.icon;
+		let icon = data.current.condition.icon; 
+		document.getElementById('icon').src = icon;
+		
+		// const response = await fetch(icon)
+		// .then(response => response.blob())
+
+		// .then(blob => {
+
+		// const imageUrl = URL.createObjectURL(blob);
+
+		// const imgElement = document.createElement('img');
+
+		// imgElement.src = imageUrl;
+
+		// document.body.appendChild(imgElement);
+		
+
+		// });
 	}
 	 catch (error) {
 		console.log(error);
