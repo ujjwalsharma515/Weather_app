@@ -1,6 +1,7 @@
 
 // const submit = document.querySelector('#submit');
 let name = document.getElementById('name');
+<h1>hii</h1>
 
 
 const generatejokes = async (q) => {
