@@ -1,7 +1,7 @@
 
 // const submit = document.querySelector('#submit');
 let name = document.getElementById('name');
-
+<h1>hello</h1>
 const generatejokes = async (q) => {
 	try {
 		name.innerHTML = q;
